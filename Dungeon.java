@@ -12,6 +12,19 @@ import java.util.Map;
  */
 public class Dungeon {
     Object Map[]= new Map[10];
+    // this is the creation of the Dungeon 
+    
+    public static Object[] MoveToRightOne(Object Map[] ) { 
+   
+    for(int i = 0, j = 0;j < Map.length;i++,j++){
+        Map[j] = Map[i];
+        if(Map[i] == 0 && j+1 < Map.length){
+            j ++;
+           
+        }
+    }  
+    return(Map); 
+}
    
         
     } 
