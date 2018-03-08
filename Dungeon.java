@@ -25,6 +25,9 @@ public class Dungeon {
         if(map[j] == null && j < map.length){
             j ++;
         }
+       if(map[j]== map[10]){
+            System.out.println("you have reached the end of the dungeon");
+        }
         System.out.println("your are now in " + map[j]);
     }  
  
