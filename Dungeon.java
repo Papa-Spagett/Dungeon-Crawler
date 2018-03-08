@@ -30,6 +30,9 @@ import java.util.Map;
     //return(Map); 
 
     }
+public void populate(Object p, Object m){
+       
+   }
    
         
 }
