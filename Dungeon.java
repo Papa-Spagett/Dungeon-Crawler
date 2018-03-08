@@ -1,24 +1,24 @@
+package Classes;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package crawlerv2;
-import java.util.Map;
+
 
 /**
  *
  * @author Big Thomas
  */
-  public static void main(String[] args) {
-        // TODO code application logic here
-    }
 
-    Object map[]= new Object[10];
+public class Dungeon {
+   Object map[]= new Object[10];
+    private Object Player;
 
     // this is the creation of the Dungeon 
     
-    public void MoveToRightOne(Object p ) { 
+    public void MoveToRightOne(Player p ) { 
    
     for(int  j = 0;j < map.length;j++){
         
@@ -27,18 +27,16 @@ import java.util.Map;
         }
         System.out.println("your are now in " + map[j]);
     }  
-    //return(Map); 
-
+ 
     }
-public void populate(Object p, Object m){
-       
-   }
    
+  
+    public void populate(Player p, Enemy e, Boss b ){
+        map[0]= p;
+        map[9]= b;
+        map[4]= e;
+       
         
+    }
 }
-
-        
-    
-        
-
 
