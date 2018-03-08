@@ -10,24 +10,32 @@ import java.util.Map;
  *
  * @author Big Thomas
  */
-public class Dungeon {
-    Object Map[]= new Map[10];
+  public static void main(String[] args) {
+        // TODO code application logic here
+    }
+
+    Object map[]= new Object[10];
+
     // this is the creation of the Dungeon 
     
-    public static Object[] MoveToRightOne(Object Map[] ) { 
+    public void MoveToRightOne(Object p ) { 
    
-    for(int i = 0, j = 0;j < Map.length;i++,j++){
-        Map[j] = Map[i];
-        if(Map[i] == 0 && j+1 < Map.length){
+    for(int  j = 0;j < map.length;j++){
+        
+        if(map[j] == null && j < map.length){
             j ++;
-           
         }
+        System.out.println("your are now in " + map[j]);
     }  
-    return(Map); 
-}
+    //return(Map); 
+
+    }
    
         
-    } 
+}
+
+        
+    
         
 
 
