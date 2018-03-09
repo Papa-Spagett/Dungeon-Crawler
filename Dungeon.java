@@ -17,6 +17,12 @@ public class Dungeon {
     private Object Player;
 
     // this is the creation of the Dungeon 
+      public void populate(Player p, Enemy e, Boss b ){
+        map[0]= p;
+        map[9]= b;
+        map[4]= e;
+        
+    }
     
     public void MoveToRightOne(Player p ) { 
    
@@ -25,21 +31,23 @@ public class Dungeon {
         if(map[j] == null && j < map.length){
             j ++;
         }
-       if(map[j]== map[10]){
+        if(map[j]== map[10]){
             System.out.println("you have reached the end of the dungeon");
         }
+        if(instanceof map[j+1] = e]){
+        
+    }
+
         System.out.println("your are now in " + map[j]);
     }  
  
     }
    
   
-    public void populate(Player p, Enemy e, Boss b ){
-        map[0]= p;
-        map[9]= b;
-        map[4]= e;
-       
+   
         
     }
-}
+
+
+
 
