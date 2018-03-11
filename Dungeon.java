@@ -40,7 +40,10 @@ public class Dungeon {
 
         System.out.println("your are now in " + map[j]);
     }  
- 
+ if(p + 1 ==4){
+    
+ }
+       //add the attck method here 
     }
    
   
