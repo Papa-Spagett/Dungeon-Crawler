@@ -18,8 +18,7 @@ public class CrawlerV2 {
         Boss b = new Boss();
         Enemy e = new Enemy();
         Scanner in = new Scanner(System.in);
-  
-
+        
 //So the game continues to run
         boolean playing = true; 
         
@@ -46,7 +45,11 @@ public class CrawlerV2 {
         }
         if(input.equals("1")) {
             System.out.println(" The games continue!");
-          d.MoveToRightOne();
+          
+           d.MoveToRightOne();
+          if(d.MoveToRightOne()==false)
+              break;
+          
           /*if(p instanceof e){
           d.MoveToRightOne();
           }

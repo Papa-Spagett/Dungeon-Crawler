@@ -12,7 +12,7 @@ package Classes;
  */
 
 public class Dungeon {
-   Object map[]= new Object[10];
+   Object map[]= new Object[11];
 int playerpos = 0;
     /**
      *
@@ -35,21 +35,27 @@ int playerpos = 0;
  
       
       } 
-   public void MoveToRightOne() { 
+   public boolean MoveToRightOne() { 
             //here we want p's postion to move up the array one
             //essentially p++ everytime this method is called
-            map[playerpos++]=p;
-           System.out.println("You are now in room: "+ playerpos);
+           if(playerpos>=map.length){
+               System.out.println("You are at the end of the dungeon");
+               return false;
            
-    
-        
-    }
-             public void Stop(){ 
-                 if(playerpos>map.length){
-                     System.out.println("You have no reached the end of the Dungeon!");
-                 }
-                     
+           }else{
+               playerpos=playerpos+1;
+           map[playerpos]=p;
+           System.out.println("You are now in room: "+ playerpos);
+           return true;
+           
 }
+           
+   }
+        
+    
+             
+                     
+
 
    
    
