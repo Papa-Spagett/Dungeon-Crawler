@@ -1,11 +1,6 @@
 package Classes;
 import java.util.Scanner;
-import Classes.Dungeon;
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 
 /**
@@ -17,9 +12,11 @@ public class CrawlerV2 {
     /**
      * @param args the command line arguments
      */
-    public  void main(String[] args) {
-        // TODO code application logic here
-//For inputs
+    public static void main(String[] args) {
+        Dungeon d = new Dungeon();
+        Player p = new Player();
+        Boss b = new Boss();
+        Enemy e = new Enemy();
         Scanner in = new Scanner(System.in);
   
 
@@ -28,7 +25,7 @@ public class CrawlerV2 {
         
         
      System.out.println( "Enter Spaghett's Lair! " );
-        
+        d.populate();
         
         //label to tell game to start from here
         GAME:
@@ -49,7 +46,14 @@ public class CrawlerV2 {
         }
         if(input.equals("1")) {
             System.out.println(" The games continue!");
-            Dungeon.MoveToRightOne();
+          d.MoveToRightOne();
+          /*if(p instanceof e){
+          d.MoveToRightOne();
+          }
+          if(p instanceof b){
+          d.MoveToRightOne();
+          }*/
+           
             
         }
         else if(input.equals("2")) {

@@ -1,5 +1,4 @@
 package Classes;
-import java.util.Scanner;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,49 +13,69 @@ import java.util.Scanner;
 
 public class Dungeon {
    Object map[]= new Object[10];
-    private Object Player;
-    
+int playerpos = 0;
+    /**
+     *
+     */
+    public Object Player;
+    public Object Boss;
+    public Object Enemy;
+    Player p = new Player();
+        Boss b = new Boss();
+        Enemy e = new Enemy();
+   
     // this is the creation of the Dungeon 
-      public void populate(Player p, Enemy e, Boss b ){
-    Player player = (Player) map[0];
-    Enemy enemy = (Enemy) map[4];
-    Boss boss = (Boss) map[9];
-    
+      public void populate(){
+           
+          
+        map[0]= p;
+        map[5]= e;
+        map[9]=b;
+      
  
       
-      }
+      } 
    public void MoveToRightOne() { 
-       Player player = (Player) map[0];
-    Enemy enemy = (Enemy) map[4];
-    Boss boss = (Boss) map[9];
-   player = (Classes.Player) map[0];
-    for(int  p = 0; p < map.length;p++){
+            //here we want p's postion to move up the array one
+            //essentially p++ everytime this method is called
+            map[playerpos++]=p;
+           System.out.println("You are now in room: "+ playerpos);
+           
+    
         
-        if(map[p] == null && p < map.length){
-            p ++;
-        }
-        if(Player instanceof Enemy){
-       player = (Classes.Player) map[5];
-      
-    }else if(Player instanceof Boss){
-       player = (Classes.Player) map[10];
-        }
-    else if(map[p]== map[10]){
-            System.out.println("you have reached the end of the dungeon");
-            break;
-        }
-          System.out.println("You are now in room:  " + map[p]);
+    }
+             public void Stop(){ 
+                 if(playerpos>map.length){
+                     System.out.println("You have no reached the end of the Dungeon!");
+                 }
+                     
+}
+
+   
+   
+}
+   
+
+
+
+        
+           
+         
+    
+    
     
 
       
-    }  
+      
+
     
 //    if(p + 1 ==4){
 //        
 //   Player.playerattack
- }
+ 
     
-    }
+    
+
    
   
    
