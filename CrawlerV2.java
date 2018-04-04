@@ -14,9 +14,6 @@ public class CrawlerV2 {
      */
     public static void main(String[] args) {
         Dungeon d = new Dungeon();
-        Player p = new Player();
-        Boss b = new Boss();
-        Enemy e = new Enemy();
         Scanner in = new Scanner(System.in);
         
 //So the game continues to run
@@ -47,8 +44,8 @@ public class CrawlerV2 {
             System.out.println(" The games continue!");
           
            d.MoveToRightOne();
-          if(d.MoveToRightOne()==false)
-              break;
+           
+         
           
           /*if(p instanceof e){
           d.MoveToRightOne();
