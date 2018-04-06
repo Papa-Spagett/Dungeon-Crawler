@@ -49,12 +49,7 @@ public class CrawlerV2 {
            }
          
           
-          /*if(p instanceof e){
-          d.MoveToRightOne();
-          }
-          if(p instanceof b){
-          d.MoveToRightOne();
-          }*/
+          
            
             
         }
