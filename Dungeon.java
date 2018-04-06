@@ -33,7 +33,8 @@ public class Dungeon {
    public boolean MoveToRightOne() { 
             //here we want p's postion to move up the array one
             //essentially p++ everytime this method is called
-           if(playerpos >= map.length){
+           if(playerpos == map.length-1){
+                
                System.out.println("You are at the end of the dungeon");
                return false;
            

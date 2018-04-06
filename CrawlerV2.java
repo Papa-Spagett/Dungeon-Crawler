@@ -43,8 +43,10 @@ public class CrawlerV2 {
         if(input.equals("1")) {
             System.out.println(" The games continue!");
           
-           d.MoveToRightOne();
-           
+          
+           if (d.MoveToRightOne()==false){
+               break;
+           }
          
           
           /*if(p instanceof e){
